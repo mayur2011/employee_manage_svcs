@@ -7,8 +7,6 @@ a Go application that manages a simple employee database or in-memory store with
      * `UpdateEmployee`: Updates the details of an existing employee.
      * `DeleteEmployee`: Deletes an employee from the database or store by ID.
 
-#### In order to run application (from main.go) please go to path=
-<users>\<user_name>\<folder>\employee_manage_svcs> go run main.go
+## In order to run application (from main.go) plese go to path= <folder>\employee_manage_svcs> go run main.go
 
-#### In order to run unit tests please go to path= 
-......\<folder>\employee_manage_svcs\controllers> go test -v
+## In order to run unit tests please go to path= <folder>\employee_manage_svcs\controllers> go test -v

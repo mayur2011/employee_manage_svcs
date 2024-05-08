@@ -7,8 +7,8 @@ import (
 	"github.com/gorilla/mux"
 )
 
-// Setting Customer routes
-func SetCustomerRoutes(router *mux.Router) *mux.Router {
+// Setting Employee routes
+func SetEmployeeRoutes(router *mux.Router) *mux.Router {
 	employeeStore := mapstore.NewMapStore()
 	employeeController := controllers.EmployeeController{Store: employeeStore}
 	router.Handle("/employee", controllers.ResponseHandler(employeeController.PostEmployee)).Methods("POST")
@@ -19,9 +19,9 @@ func SetCustomerRoutes(router *mux.Router) *mux.Router {
 	return router
 }
 
-// InitRoutes registers all customer routes for the application.
+// InitRoutes registers all employee routes for the application.
 func InitRoutes() *mux.Router {
 	router := mux.NewRouter()
-	router = SetCustomerRoutes(router)
+	router = SetEmployeeRoutes(router)
 	return router
 }
